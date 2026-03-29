@@ -1,0 +1,230 @@
+/* General implementation in whole */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #fffefe;
+    background-color: #061D7B;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #061D7B;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero part */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: white;
+    /* url('https://via.placeholder.com/1200x800'); */
+    background-size: cover;
+    color: #061D7B;
+    min-height: 80vh;
+    height: auto;
+    padding: 40px 20px;
+
+}
+section {
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #061D7B;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #061D7B;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Utility Classes */
+.container {
+    padding: 60px 5%;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;          /* vertical center */
+    justify-content: space-between;
+    padding: 80px 60px;           /* space around like blue border */
+    gap: 60px;                    /* space between text & image */
+}
+
+/* Left Text Box */
+.about-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* Center text inside */
+.about-text h1,
+.about-text p {
+    margin-bottom: 20px;
+}
+.about-text h1 {
+    font-size: 40px;   /* main heading */
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 22px;   /* normal readable paragraph */
+    line-height: 1.6;  /* better spacing between lines */
+}
+
+/* Right Image */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;      /* center image horizontally */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+}
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    color: #061D7B; 
+}
+
+/* a flex direction is column in Contact Form */
+.contactform {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform input, 
+.contactform textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* css of footer*/  
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #061D7B;
+    color: white;
+}
+
+/*  for responsives  */
+/* Mobile navbar fix */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap; /* allows items to move to next line */
+        padding: 10px 3%;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;   /* wrap links instead of hiding */
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 10px; /* reduce spacing */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* smaller text */
+    }
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+
+    .about-flex {
+        display: flex;
+        flex-direction: column; /* stack vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 250px; /* smaller image */
+    }
+}
+/* projects section background */
+.bg-projects {
+    background-color: #061D7B;
+}
+
+/* THe Contact Section Background */
+.bg-contact {
+    background-color: #ffffff;
+    color: #061D7B;
+}
+
+#projects h2 {
+    color: white;
+}
