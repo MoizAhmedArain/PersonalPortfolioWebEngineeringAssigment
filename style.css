@@ -75,7 +75,7 @@ section {
     cursor: pointer;
 }
 
-/* Utility Classes */
+
 .container {
     padding: 60px 5%;
 }
@@ -89,41 +89,41 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* About Section */
+
 .about-section {
     display: flex;
-    align-items: center;          /* vertical center */
+    align-items: center;          
     justify-content: space-between;
-    padding: 80px 60px;           /* space around like blue border */
-    gap: 60px;                    /* space between text & image */
+    padding: 80px 60px;           
+    gap: 60px;                    
 }
 
-/* Left Text Box */
+
 .about-text {
     flex: 1;
     max-width: 500px;
 }
 
-/* Center text inside */
+
 .about-text h1,
 .about-text p {
     margin-bottom: 20px;
 }
 .about-text h1 {
-    font-size: 40px;   /* main heading */
+    font-size: 40px;   
     font-weight: 700;
 }
 
 .about-text p {
-    font-size: 22px;   /* normal readable paragraph */
-    line-height: 1.6;  /* better spacing between lines */
+    font-size: 22px;  
+    line-height: 1.6; 
 }
 
 /* Right Image */
 .about-image {
     flex: 1;
     display: flex;
-    justify-content: center;      /* center image horizontally */
+    justify-content: center;     
 }
 
 .about-image img {
@@ -131,10 +131,10 @@ h2 {
     max-width: 400px;
     border-radius: 12px;
 }
-/* Project Grid */
+
 .project-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for mobile */
+    grid-template-columns: 1fr; 
     gap: 20px;
 }
 
@@ -161,37 +161,35 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-/* css of footer*/  
-footer {
+
+footer { /* css of footer*/  
     text-align: center;
     padding: 20px;
     background: #061D7B;
     color: white;
 }
 
-/*  for responsives  */
-/* Mobile navbar fix */
 @media (max-width: 768px) {
 
     .navbar {
-        flex-wrap: wrap; /* allows items to move to next line */
+        flex-wrap: wrap; 
         padding: 10px 3%;
     }
 
     .nav-links {
         display: flex;
-        flex-wrap: wrap;   /* wrap links instead of hiding */
+        flex-wrap: wrap;  
         justify-content: center;
         width: 100%;
         margin-top: 10px;
     }
 
     .nav-links li {
-        margin: 5px 10px; /* reduce spacing */
+        margin: 5px 10px; 
     }
 
     .nav-links a {
-        font-size: 14px; /* smaller text */
+        font-size: 14px; 
     }
 }
 .about-image img {
@@ -205,21 +203,20 @@ footer {
 
     .about-flex {
         display: flex;
-        flex-direction: column; /* stack vertically */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
     }
 
     .about-image img {
-        max-width: 250px; /* smaller image */
+        max-width: 250px; 
     }
 }
-/* projects section background */
+
 .bg-projects {
     background-color: #061D7B;
 }
 
-/* THe Contact Section Background */
 .bg-contact {
     background-color: #ffffff;
     color: #061D7B;
